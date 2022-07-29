@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEMIKART</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="./img/semkart.png" alt="SEMKART">
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- Task URL -----
+    https://xd.adobe.com/view/f755e53e-2d9b-4c82-9a58-f07e7544708a-a206/screen/d15a4093-5294-4711-a5af-0e4d77b62c22/ -->
+
+<body>
+    <div class="nav">
+        <div class="navitems">
+            <div class="section1">
+
+                <!-- <span><i class="bi bi-list fs-1 menubtn"></i></span> -->
+                <span><a href="/" style="padding-left: 80px;"><img src="./img/semkart.png" alt=""></a></span>
+            </div>
+            <div class="section2">
+                <div class="menu-title active">
+                    <p>Sales</p>
+                </div>
+                <div class="menu-title ">
+                    <p style="color: rgb(156, 154, 154)">Supply Chain</p>
+                </div>
+            </div>
+            <div class="section3 ">
+                <div class="nortification">
+                    <div>
+                        <i class="bi bi-bell bell-noritfication">
+                            <p
+                                style="width:10px;height:10px;background-color:rgb(183, 22, 22);border-radius: 100%;margin:-18px 0 0 -7px;">
+                            </p>
+                        </i>
+                    </div>
+                    <div class="dbprofile"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================= Left Menu =========================== -->
+    <div class="mainMenu">
+        <div class="leftmenu">
+            <div class="dropdown">
+                <div class="dropbtn"><i class="bi bi-list fs-1 menubtn"></i></div>
+                <div class="dropdown-content">
+                    <a href="#" class="fs-5">Dashboard</a>
+                    <p style="margin:0 0 0 20px;">
+                        <a href="#" class="dashboard-title db-active">Sales</a>
+                        <a href="#" class="dashboard-title">Supply Chain</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="leftmenu-Items">
+                <p class="menu-items-title"><a href="#"></a></p>
+                <p class="menu-items-title"><a href="#"></a></p>
+                <p class="menu-items-title"><a href="#"></a></p>
+                <p class="menu-items-title"><a href="#"></a></p>
+                <p class="menu-items-title"><a href="#"></a></p>
+            </div>
+        </div>
+        <!-- =================================== Dashbord Body ============================= -->
+        <div class="dashbordbody">
+            <div class="dashbordbody-items">
+                <div class="dashbordbody-title">Sales Dashboard</div>
+                <div class="dashbordbody-info">
+                    <div class="select-menu">
+                        <div class="custom-select" style="width:200px;">
+                            <p>Filter By</p>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="custom-select" style="width:200px;">
+                            <p>Start Date</p>
+                            <input type="date" name="date" required />
+                        </div>
+                        <div class="custom-select" style="width:200px;">
+                            <p>End Date</p>
+                            <input type="date" name="date" required />
+                        </div>
+                        <div class="custom-select" style="width:200px;">
+                            <p>Business Unit</p>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="custom-select" style="width:200px;">
+                            <p>Order Type</p>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="custom-select" style="width:200px;">
+                            <p>Regions</p>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="custom-select"
+                            style="width:200px; display: flex;align-items: center;height: auto;margin-top: 35px;">
+                            <button class="dbBtn">Apply</button>
+                        </div>
+                    </div>
+
+                    <div class="sales-db">
+                        <div class="sales-db-graph">
+                            <!-- <img src="./img/data1.png" width="500px" height="400px"> -->
+                            <svg width="640" height="480" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:svg="http://www.w3.org/2000/svg">
+                                <g>
+                                    <title>Layer 1</title>
+                                    <line stroke="#b2b2b2" id="svg_2" y2="357.00001" x2="81" y1="61" x1="77"
+                                        stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null"
+                                        stroke-width="null" fill="none" />
+                                    <line transform="rotate(0.8327288627624512 567.499999999999,213.99999999999895) "
+                                        stroke="#cccccc" id="svg_3" y2="362.50001" x2="569" y1="65.5" x1="566"
+                                        stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null"
+                                        stroke-width="null" fill="none" />
+                                    <line stroke="#cccccc" id="svg_4" y2="357.5" x2="80.00001" y1="363.5" x1="569.99997"
+                                        stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null"
+                                        stroke-width="null" fill="none" />
+                                    <text stroke="#494747"
+                                        transform="matrix(0.8162343179743411,0,0,0.5859167398867271,20.199446115008882,137.6940301350685) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        id="svg_6" y="400.1731" x="96.87431" stroke-linecap="null"
+                                        stroke-linejoin="null" stroke-dasharray="null" stroke-width="0"
+                                        fill="#999999">jan</text>
+                                    <text stroke="#000000"
+                                        transform="matrix(0.5039720807426333,0,0,0.4997607469558715,38.20886306969136,221.07166035938278) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        id="svg_7" y="338.97128" x="123.75673" stroke-linecap="null"
+                                        stroke-linejoin="null" stroke-dasharray="null" stroke-width="0"
+                                        fill="#999999">2022</text>
+                                    <text id="svg_9" stroke="#000000"
+                                        transform="matrix(0.9064419912335497,0,0,0.7011955267068586,227.72036080008775,-30.626505650450248) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="586.13575" x="354.53292" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#999999">dec</text>
+                                    <text id="svg_10" stroke="#000000"
+                                        transform="matrix(0.8614325958152094,0,0,0.67196014029221,229.41302481986583,-14.623365711424405) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="580.76052" x="55.27357" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#999999">may</text>
+                                    <text id="svg_11" stroke="#000000"
+                                        transform="matrix(0.9064419912335497,0,0,0.6427249349961102,227.72036080008775,1.7645136176729608) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="580.521" x="5.91712" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#999999">apr</text>
+                                    <text id="svg_12" stroke="#000000"
+                                        transform="matrix(0.7268263194201653,0,0,0.7015577638047211,215.02645248328966,-33.887692594844836) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="583.39325" x="-35.99234" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#999999">mar</text>
+                                    <text id="svg_13" stroke="#000000"
+                                        transform="matrix(0.7497262664537828,0,0,0.6109296579349746,211.46969676209866,20.983951217753926) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="579.7974" x="-88.13654" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#999999">feb</text>
+                                    <text id="svg_14" stroke="#000000"
+                                        transform="matrix(0.883890099932824,0,0,0.7307588735339846,229.41751609182674,-49.16859458524233) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="584.70962" x="320.33327" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#999999">nov</text>
+                                    <text id="svg_15" stroke="#000000"
+                                        transform="matrix(0.8387862633032197,0,0,0.7010865386200392,245.1994852822435,-30.472083042598) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="586.02599" x="272.18317" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#999999">oct</text>
+                                    <text id="svg_16" stroke="#000000"
+                                        transform="matrix(0.8162995839830407,0,0,0.7304309131215073,247.12742906621952,-46.97600720895101) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="584.70962" x="230.12011" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#999999">sep</text>
+                                    <text id="svg_17" stroke="#000000"
+                                        transform="matrix(0.8164232544250218,0,0,0.67196014029221,243.2215044738661,-14.392462271436663) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="583.39325" x="188.32089" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#999999">aug</text>
+                                    <text id="svg_18" stroke="#000000"
+                                        transform="matrix(0.8614325958152094,0,0,0.6719602761311216,233.43508297441127,-14.507991361579279) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="580.5887" x="143.47309" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#999999">jul</text>
+                                    <text id="svg_19" stroke="#000000"
+                                        transform="matrix(0.9064419912335497,0,0,0.6427249349961102,227.72036080008775,1.7645136176729608) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="580.521" x="100.79357" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#b2b2b2">jun</text>
+                                    <line stroke="#db6d6d"
+                                        transform="rotate(0.5321436524391174 103.71997070312956,303.48345947265517) "
+                                        id="svg_22" y2="356.99638" x2="105.21997" y1="249.97055" x1="102.21997"
+                                        stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null"
+                                        stroke-width="8" fill="none" />
+                                    <line id="svg_35" stroke="#db6d6d"
+                                        transform="rotate(0.5321436524391174 321.50000000000256,280.0000000000026) "
+                                        y2="360.9978" x2="323" y1="199.00221" x1="320" stroke-linecap="null"
+                                        stroke-linejoin="null" stroke-dasharray="null" stroke-width="7" fill="none" />
+                                    <line stroke="#db6d6d" id="svg_36"
+                                        transform="rotate(0.5321436524391174 361.30505371094824,299.988922119144) "
+                                        y2="359.99689" x2="362.80506" y1="239.98092" x1="359.80506"
+                                        stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null"
+                                        stroke-width="7" fill="none" />
+                                    <line stroke="#db6d6d" id="svg_37"
+                                        transform="rotate(0.5321436524391174 399.60198974609483,271.0195312500005) "
+                                        y2="362.99827" x2="401.10199" y1="179.04077" x1="398.10199"
+                                        stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null"
+                                        stroke-width="7" fill="none" />
+                                    <line stroke="#db6d6d" id="svg_38"
+                                        transform="rotate(0.5321436524391174 436.7598266601657,252.02563476562239) "
+                                        y2="360.999" x2="438.25982" y1="143.05226" x1="435.25982" stroke-linecap="null"
+                                        stroke-linejoin="null" stroke-dasharray="null" stroke-width="7" fill="none" />
+                                    <line stroke="#db6d6d" id="svg_39"
+                                        transform="rotate(0.5321436524391174 478.29125976562824,304.47485351562665) "
+                                        y2="362.99683" x2="479.79125" y1="245.95286" x1="476.79125"
+                                        stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null"
+                                        stroke-width="7" fill="none" />
+                                    <line stroke="#db6d6d" id="svg_40"
+                                        transform="rotate(0.5321436524391174 512.59283447266,271.0055236816379) "
+                                        y2="361.99823" x2="514.09283" y1="180.01279" x1="511.09283"
+                                        stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null"
+                                        stroke-width="7" fill="none" />
+                                    <line stroke="#db6d6d" id="svg_41"
+                                        transform="rotate(0.5321436524391174 545.332946777342,298.9845275878958) "
+                                        y2="361.99702" x2="546.83296" y1="235.97201" x1="543.83296"
+                                        stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null"
+                                        stroke-width="7" fill="none" />
+                                    <line stroke="#db6d6d" id="svg_42"
+                                        transform="rotate(0.5321436524391174 278.82498168946114,243.00765991210804) "
+                                        y2="358.99931" x2="280.32501" y1="127.01602" x1="277.32501"
+                                        stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null"
+                                        stroke-width="7" fill="none" />
+                                    <line stroke="#db6d6d" id="svg_43"
+                                        transform="rotate(0.5321436524391174 235.54643249512003,274.00042724609443) "
+                                        y2="359.99801" x2="237.04644" y1="188.00284" x1="234.04644"
+                                        stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null"
+                                        stroke-width="7" fill="none" />
+                                    <line stroke="#db6d6d" id="svg_44"
+                                        transform="rotate(0.5321436524391174 189.16110229492455,314.4875793457056) "
+                                        y2="358.99623" x2="190.66111" y1="269.97891" x1="187.66111"
+                                        stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null"
+                                        stroke-width="7" fill="none" />
+                                    <line stroke="#db6d6d" id="svg_45"
+                                        transform="rotate(0.5321436524391174 148.43034362793333,284.49935913085716) "
+                                        y2="357.99748" x2="149.93035" y1="211.00123" x1="146.93035"
+                                        stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null"
+                                        stroke-width="7" fill="none" />
+                                    <text stroke="#757272"
+                                        transform="matrix(0.6222928483219902,0,0,0.39241188478391664,-7.184953650939676,192.23008043170682) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        id="svg_70" y="60" x="177" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#635e5e">0</text>
+                                    <text id="svg_71" stroke="#757272"
+                                        transform="matrix(0.6222928483219902,0,0,0.39241188478391664,165.85416988421656,202.47261888385523) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="-164.25417" x="352.15869" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#635e5e">0</text>
+                                    <text id="svg_72" stroke="#757272"
+                                        transform="matrix(0.6222928483219902,0,0,0.39241188478391664,165.85416988421656,202.47261888385523) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="37.06491" x="310.37772" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#635e5e">0</text>
+                                    <text id="svg_73" stroke="#757272"
+                                        transform="matrix(0.6222928483219902,0,0,0.39241188478391664,165.85416988421656,202.47261888385523) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="-176.99588" x="241.27842" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#635e5e">0</text>
+                                    <text id="svg_74" stroke="#757272"
+                                        transform="matrix(0.6222928483219902,0,0,0.4161072978124758,165.85416988421656,211.33415506294097) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="-366.81554" x="178.60696" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#635e5e">0</text>
+                                    <text id="svg_75" stroke="#757272"
+                                        transform="matrix(0.6222928483219902,0,0,0.39241188478391664,165.85416988421656,202.47261888385523) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="-189.73759" x="96.65198" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#635e5e">0</text>
+                                    <text id="svg_76" stroke="#757272"
+                                        transform="matrix(0.6222928483219902,0,0,0.39241188478391664,165.85416988421656,202.47261888385523) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="116.06354" x="30.7666" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#635e5e">0</text>
+                                    <text id="svg_77" stroke="#757272"
+                                        transform="matrix(0.6222928483219902,0,0,0.39241188478391664,165.85416988421656,202.47261888385523) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="-128.57737" x="-30.2979" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#635e5e">0</text>
+                                    <text id="svg_78" stroke="#757272"
+                                        transform="matrix(-0.5583297202046987,0,0,0.39241188478391664,955.1843922581227,198.23008043170682) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="-196.76457" x="788.35671" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#635e5e">0</text>
+                                    <text id="svg_79" stroke="#757272"
+                                        transform="matrix(0.6222928483219902,0,0,0.39241188478391664,-7.184953650939676,192.23008043170682) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="65.71474" x="774.85216" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#635e5e">0</text>
+                                    <text id="svg_80" stroke="#757272"
+                                        transform="matrix(0.6222928483219902,0,0,0.39241188478391664,-7.184953650939676,192.23008043170682) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="-291.05325" x="717.00158" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#635e5e">0</text>
+                                    <text id="svg_81" stroke="#757272"
+                                        transform="matrix(-0.5782895545361287,0,0,0.3924118847839166,810.1605350550434,182.23008043170682) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="73.35977" x="458.52551" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#635e5e">0</text>
+                                    <text id="svg_82" stroke="#000000"
+                                        transform="matrix(0.5039720807426333,0,0,0.4997607469558715,38.20886306969136,221.07166035938278) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="345.98864" x="708.95442" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#999999">2022</text>
+                                    <text id="svg_83" stroke="#000000"
+                                        transform="matrix(0.5039720807426333,0,0,0.4997607469558715,38.20886306969136,221.07166035938278) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="341.98672" x="633.55341" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#999999">2022</text>
+                                    <text id="svg_84" stroke="#000000"
+                                        transform="matrix(0.5039720807426333,0,0,0.4997607469558715,38.20886306969136,221.07166035938278) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="339.98577" x="556.16818" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#999999">2022</text>
+                                    <text id="svg_85" stroke="#000000"
+                                        transform="matrix(0.5039720807426333,0,0,0.4997607469558715,38.20886306969136,221.07166035938278) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="339.98577" x="474.81446" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#999999">2022</text>
+                                    <text id="svg_86" stroke="#000000"
+                                        transform="matrix(0.5039720807426333,0,0,0.4997607469558715,38.20886306969136,221.07166035938278) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="341.98672" x="383.53956" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#999999">2022</text>
+                                    <text id="svg_87" stroke="#000000"
+                                        transform="matrix(0.5039720807426333,0,0,0.4997607469558715,38.20886306969136,221.07166035938278) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="343.98768" x="296.23314" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#999999">2022</text>
+                                    <text id="svg_88" stroke="#000000"
+                                        transform="matrix(0.5039720807426333,0,0,0.4997607469558715,38.20886306969136,221.07166035938278) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="343.98768" x="212.89519" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#999999">2022</text>
+                                    <text id="svg_89" stroke="#000000"
+                                        transform="matrix(0.5039720807426333,0,0,0.4997607469558715,38.20886306969136,221.07166035938278) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="351.99151" x="935.15742" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#999999">2022</text>
+                                    <text id="svg_90" stroke="#000000"
+                                        transform="matrix(0.5039720807426333,0,0,0.4997607469558715,38.20886306969136,221.07166035938278) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="351.99151" x="865.70913" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#999999">2022</text>
+                                    <text id="svg_91" stroke="#000000"
+                                        transform="matrix(0.5039720807426333,0,0,0.4997607469558715,38.20886306969136,221.07166035938278) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="351.99151" x="790.30813" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#999999">2022</text>
+                                    <text id="svg_92" stroke="#000000"
+                                        transform="matrix(0.5039720807426333,0,0,0.4997607469558715,38.20886306969136,221.07166035938278) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="353.99247" x="1014.5269" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#999999">2022</text>
+                                    <text stroke="#000000"
+                                        transform="matrix(1,0,0,0.345386895385354,-100,89.48243774370594) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        id="svg_93" y="73" x="164" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#b2b2b2">0</text>
+                                    <text id="svg_95" stroke="#000000"
+                                        transform="matrix(1,0,0,0.34538689538535394,414.98954010009766,304.5568853755419) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="174.33563" x="166" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#b2b2b2">0</text>
+                                    <text id="svg_96" stroke="#000000"
+                                        transform="matrix(1,0,0,0.34538689538535394,416.98954010009766,177.5568853755419) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="73" x="164" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#b2b2b2">0</text>
+                                    <text id="svg_97" stroke="#000000"
+                                        transform="matrix(1,0,0,0.34538689538535394,416.98954010009766,92.5568853755419) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="73" x="164" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#b2b2b2">0</text>
+                                    <text id="svg_98" stroke="#000000"
+                                        transform="matrix(1,0,0,0.34538689538535394,-101.01045989990234,328.5568853755419) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="73" x="164" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#b2b2b2">0</text>
+                                    <text id="svg_99" stroke="#000000"
+                                        transform="matrix(1,0,0,-0.3446004631934423,111.98954010009766,267.8996745692315) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="17.77738" x="-47" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#b2b2b2">0</text>
+                                    <text id="svg_100" stroke="#000000"
+                                        transform="matrix(1,0,0,0.34538689538535394,-99.01045989990234,169.5568853755419) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="73" x="164" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#b2b2b2">0</text>
+                                    <text stroke="#000000"
+                                        transform="matrix(1,0,0,0.34538689538535394,416.98954010009766,92.5568853755419) "
+                                        xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18"
+                                        y="546.38218" x="164" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-dasharray="null" stroke-width="0" fill="#b2b2b2" id="svg_1">0</text>
+                                    <text fill="#333333" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null"
+                                        stroke-linecap="null" x="42.49948" y="310.87219" id="svg_8" font-size="18"
+                                        font-family="serif" text-anchor="middle" xml:space="preserve"
+                                        transform="rotate(-90.50420379638672 44.081615447998054,219.70004272460938) matrix(0.9683212041854858,0,0,0.6917515993118286,2.8468555221234055,10.408208135606856) "
+                                        stroke="#000000">Total Orders</text>
+                                    <text fill="#191919" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null"
+                                        stroke-linecap="null" x="235.93545" y="426.90196" id="svg_20" font-size="18"
+                                        font-family="serif" text-anchor="middle" xml:space="preserve"
+                                        transform="rotate(-0.2698885202407837 218.40335083009575,424.55834960937756) matrix(0.8169239163398743,0,0,0.5903669717462777,25.836791178253186,177.08545716971068) "
+                                        stroke="#000000">Lorem Ipsum</text>
+                                    <text fill="#191919" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null"
+                                        stroke-linecap="null" x="436.80683" y="429.34384" font-size="18"
+                                        font-family="serif" text-anchor="middle" xml:space="preserve"
+                                        transform="rotate(-0.2698885202407837 382.500000000005,425.9999694824171) matrix(0.8169239163398743,0,0,0.5903669717462777,25.836791178253186,177.08545716971068) "
+                                        stroke="#000000" id="svg_24">Lorem Ipsum</text>
+                                    <rect fill="#e52929" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null"
+                                        stroke-linecap="null" x="136" y="420" width="14" height="10" id="svg_25"
+                                        stroke="#f23a3a" />
+                                    <rect fill="#b2b2b2" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null"
+                                        stroke-linecap="null" x="304.5" y="422" width="14" height="10" stroke="#f23a3a"
+                                        id="svg_27" />
+                                    <line stroke="#4c4a4a" id="svg_5" y2="244" x2="184" y1="150" x1="147"
+                                        stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null"
+                                        stroke-width="null" fill="none" />
+                                    <line stroke="#4c4a4a" id="svg_21" y2="209" x2="103" y1="150" x1="144"
+                                        stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null"
+                                        stroke-width="null" fill="none" />
+                                    <line stroke="#4c4a4a" id="svg_23" y2="241" x2="187" y1="126" x1="225"
+                                        stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null"
+                                        stroke-width="null" fill="none" />
+                                    <line stroke="#4f4b4b" id="svg_26" y2="121" x2="228" y1="56" x1="275"
+                                        stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null"
+                                        stroke-width="null" fill="none" />
+                                    <line stroke="#4f4b4b" id="svg_28" y2="127" x2="314" y1="57" x1="280"
+                                        stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null"
+                                        stroke-width="null" fill="none" />
+                                    <line stroke="#4f4b4b" id="svg_29" y2="211" x2="356" y1="131" x1="316"
+                                        stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null"
+                                        stroke-width="null" fill="none" />
+                                    <line stroke="#4f4b4b" id="svg_30" y2="210" x2="360" y1="136" x1="384"
+                                        stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null"
+                                        stroke-width="null" fill="none" />
+                                    <line stroke="#4f4b4b" id="svg_31" y2="132" x2="387" y1="76" x1="436"
+                                        stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null"
+                                        stroke-width="null" fill="none" />
+                                    <line stroke="#4f4b4b" id="svg_32" y2="212" x2="473" y1="76" x1="441"
+                                        stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null"
+                                        stroke-width="null" fill="none" />
+                                    <line stroke="#4f4b4b" id="svg_33" y2="212" x2="477" y1="119" x1="514"
+                                        stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null"
+                                        stroke-width="null" fill="none" />
+                                    <line stroke="#4f4b4b" id="svg_34" y2="204" x2="544" y1="119" x1="517"
+                                        stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null"
+                                        stroke-width="null" fill="none" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="sales-db-table">
+                            <table class="table border table-striped">
+                                <thead>
+                                    <tr>
+                                        <td scope="col">BU</td>
+                                        <td scope="col">Region</td>
+                                        <td scope="col">Booked</td>
+                                        <td scope="col">Net Sales Builled</td>
+                                        <td scope="col">Vender Por</td>
+                                        <td scope="col">Resale Total</td>
+                                        <td scope="col">Raw GP</td>
+                                        <td scope="col">Net GP</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row"> </td>
+                                        <td>Nort</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row"> </td>
+                                        <td>South</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row"> </td>
+                                        <td>West</td>
+                                        <td>3867.03</td>
+                                        <td>74.55</td>
+                                        <td>288287.09</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr style="width:100%;height:1px;border-bottom:1px solid gray ;">
+                                        <td scope="row"> </td>
+                                        <td>Online</td>
+                                        <td>20</td>
+                                        <td>74.55</td>
+                                        <td>1491</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">FD</td>
+                                        <td>Nort</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>0.517%</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row"> </td>
+                                        <td>South</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr style="width:100%;height:1px;border-bottom:1px solid gray ;">
+                                        <td scope="row"> </td>
+                                        <td>West</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">Lighting </td>
+                                        <td>Nort</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row"> </td>
+                                        <td>South</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr style="width:100%;height:1px;border-bottom:1px solid gray ;">
+                                        <td scope="row"> </td>
+                                        <td>West</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">Total</td>
+                                        <td>All India</td>
+                                        <td>5867.03</td>
+                                        <td>149.1</td>
+                                        <td>149.1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
